@@ -1,0 +1,1 @@
+function i(a=0){let t=a;const r=Math.pow(10,1),n=["K","M","B","T"];for(let e=n.length-1;e>=0;e--){const o=Math.pow(10,(e+1)*3);if(o<=t){t=Math.round(t*r/o)/r,t===1e3&&e<n.length-1&&(t=1,e++),t+=n[e];break}}return String(t)}export{i as s};

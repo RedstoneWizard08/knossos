@@ -1,0 +1,19 @@
+import{S as w,i as _,s as f,C as n,_ as x,$ as y,a as b,d as c,a0 as l,g as M,z as A,E as d,a1 as h,aa as p}from"./index-d77dc8df.js";import{l as m}from"./tags-d87340e0.js";import{s as C,a as j}from"./api-22161ac7.js";import{p as v}from"./app-8b88eb34.js";import{u as g}from"./axios-9833b136.js";function k(o){let e,a='<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/>',r=[{width:"1.2em"},{height:"1.2em"},{preserveAspectRatio:"xMidYMid meet"},{viewBox:"0 0 24 24"},o[0]],s={};for(let t=0;t<r.length;t+=1)s=n(s,r[t]);return{c(){e=x("svg"),this.h()},l(t){e=y(t,"svg",{width:!0,height:!0,preserveAspectRatio:!0,viewBox:!0});var i=b(e);i.forEach(c),this.h()},h(){l(e,s)},m(t,i){M(t,e,i),e.innerHTML=a},p(t,[i]){l(e,s=A(r,[{width:"1.2em"},{height:"1.2em"},{preserveAspectRatio:"xMidYMid meet"},{viewBox:"0 0 24 24"},i&1&&t[0]]))},i:d,o:d,d(t){t&&c(e)}}}function B(o,e,a){return o.$$set=r=>{a(0,e=n(n({},e),h(r)))},e=h(e),[e]}class G extends w{constructor(e){super(),_(this,e,B,k,f,{})}}function R(o){let e,a='<path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12c0 5.303 3.438 9.8 8.205 11.385c.6.113.82-.258.82-.577c0-.285-.01-1.04-.015-2.04c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729c1.205.084 1.838 1.236 1.838 1.236c1.07 1.835 2.809 1.305 3.495.998c.108-.776.417-1.305.76-1.605c-2.665-.3-5.466-1.332-5.466-5.93c0-1.31.465-2.38 1.235-3.22c-.135-.303-.54-1.523.105-3.176c0 0 1.005-.322 3.3 1.23c.96-.267 1.98-.399 3-.405c1.02.006 2.04.138 3 .405c2.28-1.552 3.285-1.23 3.285-1.23c.645 1.653.24 2.873.12 3.176c.765.84 1.23 1.91 1.23 3.22c0 4.61-2.805 5.625-5.475 5.92c.42.36.81 1.096.81 2.22c0 1.606-.015 2.896-.015 3.286c0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>',r=[{width:"1.2em"},{height:"1.2em"},{preserveAspectRatio:"xMidYMid meet"},{viewBox:"0 0 24 24"},o[0]],s={};for(let t=0;t<r.length;t+=1)s=n(s,r[t]);return{c(){e=x("svg"),this.h()},l(t){e=y(t,"svg",{width:!0,height:!0,preserveAspectRatio:!0,viewBox:!0});var i=b(e);i.forEach(c),this.h()},h(){l(e,s)},m(t,i){M(t,e,i),e.innerHTML=a},p(t,[i]){l(e,s=A(r,[{width:"1.2em"},{height:"1.2em"},{preserveAspectRatio:"xMidYMid meet"},{viewBox:"0 0 24 24"},i&1&&t[0]]))},i:d,o:d,d(t){t&&c(e)}}}function S(o,e,a){return o.$$set=r=>{a(0,e=n(n({},e),h(r)))},e=h(e),[e]}class H extends w{constructor(e){super(),_(this,e,S,R,f,{})}}function O(o,e){v.set([{title:"Create project",body:"New projects are created as drafts, and can be found under your profile page.",type:{creation:"project"},button:{label:"click me",click:async({project_type:a,name:r,body:s})=>{let t=r.toLowerCase().replace(/ /g,"-");try{await C("GET",`project/${t}`),t+="-"+(window.crypto||window.msCrypto).getRandomValues(new Uint16Array(1)).join("")}catch{}const i={title:r,project_type:a,slug:t,description:s,body:`# Placeholder description
+
+This is your new ${a}, ${r}. A checklist below is provided to help prepare for release.
+
+### Before submitting for review
+
+- [ ] Upload at least one version
+- [ ] Edit project description
+- [ ] Update metadata
+- [ ] Select license
+- [ ] Set up environments
+- [ ] Choose categories
+- [ ] Add project and donation links (optional)
+- [ ] Add images to gallery (optional)
+- [ ] Invite project team members (optional)
+
+> Submissions are normally reviewed within 24 hours, but may take up to 48 hours
+
+Questions? [Join the Modrinth Discord server for support!](/discord)`,initial_versions:[],team_members:[{user_id:p(g).id,name:p(g).username,role:"Owner"}],categories:[],client_side:"optional",server_side:"optional",license_id:m.map(u=>u.short.toLowerCase()).includes("arr")?"arr":m[0].short,is_draft:!0};try{await j("POST","project",i)}catch(u){console.error(u)}}}},...p(v)])}export{H as G,G as U,O as c};
